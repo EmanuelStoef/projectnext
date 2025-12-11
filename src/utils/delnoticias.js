@@ -3,7 +3,7 @@ export function delNoticiaRequest(idnoticia, setResultadoCadastro, setShow) {
         e.preventDefault();
         const body = { _id: idnoticia };
         try {
-            const response = await fetch(`https://apiemanuelinfb.vercel.app/delnoticias`, {
+            const response = await fetch(`https://apiemanuelinfb-95xpj0v29-emanuels-projects-5648b1c8.vercel.app/delnoticias`, {
                 method: "DELETE",
                 headers: {
                     "Content-Type": "application/json"
