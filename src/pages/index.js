@@ -11,10 +11,10 @@ export default function Home({ noticias }) {
   return <>
     <Container>
       <Row xs={1} md={3}>
-        Main index
+    
         {Array.isArray(noticias) ?
           noticias.map(noticia => (
-            <Cards idnoticia={noticia.idnoticia}
+            <Cards idnoticia={noticia._id}
               conteudonoticia={noticia.conteudonoticia}
               titulonoticia={noticia.titulonoticia}
               datahoracadastro={noticia.datahoracadastro}
